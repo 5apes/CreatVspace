@@ -1,0 +1,303 @@
+@font-face{
+    font-family: 'CreatVfont';
+    src: url('assets/fonts/Poppins Family/Poppins-Black.ttf') format('truetype'); ;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.intro-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: transform 1.5s ease-in-out;
+}
+
+.intro-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1;
+    display: none;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.responsive-image {
+    display: block;
+    max-width: 10%;
+    max-height: 5%;
+    margin: 0 auto;
+    zoom: 150%;
+}
+.responsive-video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.text-container {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.responsive-text {
+    font-size: 1vw;
+    color: black;
+    font-weight: 300;
+    font-family: 'CreatVfont';
+}
+
+@media (max-width: 768px) {
+    .responsive-text {
+        font-size: 2vw;
+    }
+}
+.intro-responsive-text {
+    font-size: 1vw;
+    color: black;
+    font-weight: 400;
+    padding: 0 10%;
+    text-align: center;
+    font-family: 'CreatVfont';
+}
+
+@media (max-width: 768px) {
+    .intro-responsive-text {
+        font-size: 2vw;
+        padding: 0 5%;
+    }
+}
+.responsive-heading {
+    font-size: 2.5vw;
+    text-align: center;
+    color: #ce6868;
+    padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .responsive-heading {
+        font-size: 5vw;
+    }
+}
+
+.featured-artist {
+    max-width: 96%;
+    margin: auto;
+    background-color: #FFE7E9;
+    text-align: center;
+    padding: 20px;
+    color: #000;
+    font-family: 'CreatVfont';
+}
+.featured-artist h2{
+    padding-bottom: 50px;
+}
+
+.join-community {
+    text-align: center;
+    padding: 20px;
+    color: #333333;
+  }
+  
+  .community-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .action {
+    width: 49.5%; /* Adjust as needed */
+    background-color: #FFB6C1;
+    /* padding: 10px; */
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .action:focus,
+  .action:hover {
+    background-color: #FFE7E9;
+  }
+  
+  @media (max-width: 768px) {
+    .community-actions {
+      flex-direction: column;
+    }
+  
+    .action {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 10px; /* Space between buttons on small screens */
+    }
+  }
+
+.artist-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-info .artist-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'CreatVfont';
+}
+
+.artist-info .artist-role {
+    font-size: 16px;
+}
+
+.artist-quote p {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20%;
+}
+
+@media (max-width: 768px) {
+    .artist-quote p {
+        font-size: 20px;
+        padding: 0 10%;
+    }
+}
+
+.carousel {
+    position: relative;
+}
+
+.artist-profile {
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.artist-profile.active {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label,
+.modal-content input {
+    margin-bottom: 15px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content input[type="submit"] {
+    cursor: pointer;
+    background-color: #FFB6C1;
+    color: black;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Add this line */
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px; /* Add some spacing between image and text */
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-info {
+    text-align: center; /* Center the text */
+    font-family: 'CreatVfont';
+}

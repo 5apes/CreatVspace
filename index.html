@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CreatVspace</title>
+    <link rel="icon" href="assests/images/CS LOGO 2_CreatVspace Logo BUILD BLACK_2023-05-31_15.50.49 (1).png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="introContainer" class="intro-container">
+        <video id="introVideo" class="intro-video" muted autoplay playsinline>
+            <source src="assests/videos/CreatVspace - PARTNER LOGOS With Social icons WHITE ALPHA.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="mainContent" class="main-content">
+      <img src="assests/images/CS LOGO 2_CreatVspace Logo BLACK_2023-05-31_15.50.58 (1)_Updated.png" alt="CreatVspace logo" class="responsive-image">
+      <div class="text-container">
+        <p class="intro-responsive-text">Imagine a place where the most talented yet ‘undiscovered’ artists could inhabit. A platform that gave artists a new opportunity for success - purely inspired by the core values of art creation. An epicenter for artists to be discovered, connect with each other and collaborate on dynamic projects with creatives of all genres. And amongst them, art-seekers who hold the opportunities - agents of the world; directors, sponsors, producers etc. A new habitat for the modern artist.</p>
+      </div>
+      <video autoplay muted loop playsinline controls class="responsive-video">
+        <source src="assests/videos/Art & The Art Seekers.mp4" type="video/mp4">
+    </video>
+    <div class="text-container">
+      <p class="responsive-text">Welcome to CreatVspace - a networking platform developed for independent artists to be discovered across the board for collaboration and advanced possibilities for their careers.</p>
+    </div>
+    <section class="featured-artist">
+      <h2>Featured Artists</h2>
+      <div id="carousel" class="carousel">
+        <div class="artist-profile active">
+          <div class="profile-header">
+            <div class="circle-image">
+                <img src="assests/images/Photographs/Aika.png" alt="Aika Alemi">
+            </div>
+            <div class="artist-info">
+                <div class="artist-name">Aika Alemi</div>
+            </div>
+          </div>
+          <div class="artist-quote">
+              <p>“I think it's a great embodiment and also a sign that you could be a multiple media artist… You can be a fashion designer, tomorrow, you can DJ and the next project you can be an actor or producer…”</p>
+          </div>
+        </div>
+        <div class="artist-profile">
+          <div class="profile-header">
+            <div class="circle-image">
+                <img src="assests/images/Photographs/Tamara Dey.jpg" alt="Tamara Dey">
+            </div>
+            <div class="artist-info">
+                <div class="artist-name">Tamara Dey</div>
+            </div>
+          </div>
+          <div class="artist-quote">
+              <p>“It is about community, ultimately. Establishing spaces where there is a community of people who are vibrating on the same frequency.”</p>
+          </div>
+        </div>
+        <div class="artist-profile">
+          <div class="profile-header">
+            <div class="circle-image">
+                <img src="assests/images/Photographs/Tedo.jpeg" alt="Tedo Rekhviashvili">
+            </div>
+            <div class="artist-info">
+                <div class="artist-name">Tedo Rekhviashvili</div>
+            </div>
+          </div>
+          <div class="artist-quote">
+              <p>“Of all, I want to say that without such collaborations, artists cannot exist in this world because we [have become] so extremely social in the postmodern era.”</p>
+          </div>
+        </div>
+        <div class="artist-profile">
+          <div class="profile-header">
+            <div class="circle-image">
+                <img src="assests/images/Photographs/Kyrill.jpg" alt="Kirill Vychkin">
+            </div>
+            <div class="artist-info">
+                <div class="artist-name">Kirill Vychkin</div>
+            </div>
+          </div>
+          <div class="artist-quote">
+              <p>“All creative people need some platform which will be easier to use. It will be cool also be cool if it [became easier] to connect creative people with agents, with producers and clients”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="join-community">
+      <h2>Join The Community</h2>
+      <div class="community-actions">
+        <div class="action podcast" role="button" tabindex="0">
+          <p>Join our podcasts</p>
+          <div class="modal" id="podcastModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="podcastForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="artistType">Type of Artist (genre):</label>
+                    <input type="text" id="artistType" name="artistType" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="action survey" role="button" tabindex="0">
+          <p>Take our artist survey</p>
+        </div>
+      </div>
+    </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
